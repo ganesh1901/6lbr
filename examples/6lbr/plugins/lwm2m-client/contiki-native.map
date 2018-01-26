@@ -1,0 +1,504 @@
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .note.GNU-stack
+                0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+ .note.GNU-stack
+                0x00000000        0x0 obj_native/lwm2m-client.o
+ .note.GNU-stack
+                0x00000000        0x0 obj_native/lwm2m.o
+ .note.GNU-stack
+                0x00000000        0x0 obj_native/lwm2m-device-object.o
+ .note.GNU-stack
+                0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+ .note.GNU-stack
+                0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+LOAD obj_native/lwm2m-client.o
+LOAD obj_native/lwm2m.o
+LOAD obj_native/lwm2m-device-object.o
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/libgcc.a
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/../../../../armv7l-analogics-linux-gnueabi/lib/libgcc_s.so
+START GROUP
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/../../../../armv7l-analogics-linux-gnueabi/lib/libgcc_s.so.1
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/libgcc.a
+END GROUP
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/libc.so
+START GROUP
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/libc.so.6
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/usr/lib/libc_nonshared.a
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/ld-linux.so.3
+END GROUP
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/libgcc.a
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/../../../../armv7l-analogics-linux-gnueabi/lib/libgcc_s.so
+START GROUP
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/../../../../armv7l-analogics-linux-gnueabi/lib/libgcc_s.so.1
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/libgcc.a
+END GROUP
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+LOAD /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+                0x000000b4                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x000000b4      0x174
+ *(.hash)
+ .hash          0x000000b4      0x174 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000228      0x360
+ *(.dynsym)
+ .dynsym        0x00000228      0x360 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.dynstr         0x00000588      0x419
+ *(.dynstr)
+ .dynstr        0x00000588      0x419 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.gnu.version    0x000009a2       0x6c
+ *(.gnu.version)
+ .gnu.version   0x000009a2       0x6c /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.gnu.version_d  0x00000a10        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.gnu.version_r  0x00000a10       0x20
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000a10       0x20 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.rel.dyn        0x00000a30      0x198
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ .rel.data.rel  0x00000a30       0xa0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .rel.data.rel.local
+                0x00000ad0       0x48 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00000b18       0xa0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.iplt)
+ .rel.iplt      0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .rel.init_array
+                0x00000bb8        0x8 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .rel.fini_array
+                0x00000bc0        0x8 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.rela.dyn
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.iplt)
+
+.rel.plt        0x00000bc8       0x80
+ *(.rel.plt)
+ .rel.plt       0x00000bc8       0x80 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x00000c48        0xc
+ *(SORT(.init))
+ .init          0x00000c48        0x8 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+                0x00000c48                _init
+ .init          0x00000c50        0x4 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+.plt            0x00000c54       0xd4
+ *(.plt)
+ .plt           0x00000c54       0xd4 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.iplt           0x00000d28        0x0
+ *(.iplt)
+ .iplt          0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+
+.text           0x00000d28      0x968
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000d28       0x24 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .text          0x00000d4c      0x160 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+ .text          0x00000eac      0x2a0 obj_native/lwm2m-client.o
+ .text          0x0000114c      0x134 obj_native/lwm2m.o
+                0x0000114c                lwm2m_init
+                0x00001260                lwm2m_set_resources_list
+ .text          0x00001280      0x410 obj_native/lwm2m-device-object.o
+                0x000012a8                resource_device_manufacturer_get_handler
+                0x00001330                resource_device_model_number_get_handler
+                0x000013b8                resource_device_serial_number_get_handler
+                0x00001430                resource_device_firmware_get_handler
+                0x000014a8                resource_device_reboot_post_handler
+                0x00001578                resource_device_time_get_handler
+                0x000015ec                resource_device_get_handler
+ .text          0x00001690        0x0 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+ .text          0x00001690        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini           0x00001690        0x8
+ *(SORT(.fini))
+ .fini          0x00001690        0x4 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+                0x00001690                _fini
+ .fini          0x00001694        0x4 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+                0x00001698                PROVIDE (__etext, .)
+                0x00001698                PROVIDE (_etext, .)
+                0x00001698                PROVIDE (etext, .)
+
+.rodata         0x00001698      0x188
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00001698       0xf4 obj_native/lwm2m-client.o
+ .rodata        0x0000178c       0x34 obj_native/lwm2m.o
+ .rodata        0x000017c0       0x60 obj_native/lwm2m-device-object.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00001820                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00001820                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr   0x00001820        0x0
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+.eh_frame       0x00001820        0x4
+ *(.eh_frame)
+ .eh_frame      0x00001820        0x4 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x00001824                . = (ALIGN (0x8000) - ((0x8000 - .) & 0x7fff))
+                0x00009824                . = DATA_SEGMENT_ALIGN (0x8000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array     0x00009824        0x4
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00009824        0x4 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+
+.fini_array     0x00009828        0x4
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+ .fini_array    0x00009828        0x4 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x0000982c        0x4
+ *(.jcr)
+ .jcr           0x0000982c        0x0 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+ .jcr           0x0000982c        0x4 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x00009830       0xe0
+ *(.dynamic)
+ .dynamic       0x00009830       0xe0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+                0x00009830                _DYNAMIC
+                0x00009910                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x00009910       0x9c
+ *(.got.plt)
+ .got.plt       0x00009910       0x4c /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+                0x00009910                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ *(.got)
+ .got           0x0000995c       0x50 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ *(.igot)
+
+.data           0x000099ac      0x158
+                0x000099ac                PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000099ac        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .data          0x000099ac        0x0 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+ .data.rel      0x000099ac        0x4 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+                0x000099ac                __dso_handle
+ .data          0x000099b0        0x0 obj_native/lwm2m-client.o
+ .data.rel.local
+                0x000099b0       0x28 obj_native/lwm2m-client.o
+                0x000099b0                lwm2m_objects_link
+                0x000099b4                lwm2m_device_manufacturer
+                0x000099b8                lwm2m_device_model
+                0x000099bc                sixlbr_plugin_info
+ .data          0x000099d8        0x0 obj_native/lwm2m.o
+ .data          0x000099d8        0x0 obj_native/lwm2m-device-object.o
+ .data.rel      0x000099d8      0x12c obj_native/lwm2m-device-object.o
+                0x000099d8                resource_device_manufacturer
+                0x00009a00                resource_device_model_number
+                0x00009a28                resource_device_serial_number
+                0x00009a50                resource_device_firmware
+                0x00009a78                resource_device_reboot
+                0x00009aa0                resource_device_time
+                0x00009ac8                resource_device_batch_list
+                0x00009adc                resource_device
+ .data          0x00009b04        0x0 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+ .data          0x00009b04        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+.tm_clone_table
+                0x00009b04        0x0
+ .tm_clone_table
+                0x00009b04        0x0 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+ .tm_clone_table
+                0x00009b04        0x0 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+
+.data1
+ *(.data1)
+                0x00009b04                _edata = .
+                0x00009b04                PROVIDE (edata, .)
+                0x00009b04                . = .
+                0x00009b04                __bss_start = .
+                0x00009b04                __bss_start__ = .
+
+.bss            0x00009b04       0x1c
+ *(.dynbss)
+ .dynbss        0x00000000        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00009b04        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .bss           0x00009b04        0x1 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+ *fill*         0x00009b05        0x3 
+ .bss           0x00009b08       0x10 obj_native/lwm2m-client.o
+ .bss           0x00009b18        0x0 obj_native/lwm2m.o
+ .bss           0x00009b18        0x8 obj_native/lwm2m-device-object.o
+ .bss           0x00009b20        0x0 /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+ .bss           0x00009b20        0x0 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+ *(COMMON)
+                0x00009b20                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x00009b20                _bss_end__ = .
+                0x00009b20                __bss_end__ = .
+                0x00009b20                . = ALIGN (0x4)
+                0x00009b20                . = SEGMENT_START ("ldata-segment", .)
+                0x00009b20                . = ALIGN (0x4)
+                0x00009b20                __end__ = .
+                0x00009b20                _end = .
+                0x00009b20                PROVIDE (end, .)
+                0x00009b20                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x1e
+ *(.comment)
+ .comment       0x00000000       0x1e /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+                                 0x1f (size before relaxing)
+ .comment       0x00000000       0x1f obj_native/lwm2m-client.o
+ .comment       0x00000000       0x1f obj_native/lwm2m.o
+ .comment       0x00000000       0x1f obj_native/lwm2m-device-object.o
+ .comment       0x00000000       0x1f /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+
+.ARM.attributes
+                0x00000000       0x39
+ .ARM.attributes
+                0x00000000       0x2b /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .ARM.attributes
+                0x0000002b       0x3b /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtbeginS.o
+ .ARM.attributes
+                0x00000066       0x3b obj_native/lwm2m-client.o
+ .ARM.attributes
+                0x000000a1       0x3b obj_native/lwm2m.o
+ .ARM.attributes
+                0x000000dc       0x3b obj_native/lwm2m-device-object.o
+ .ARM.attributes
+                0x00000117       0x3b /opt/analogics/am335x_sk/toolchain/bin/../lib/gcc/armv7l-analogics-linux-gnueabi/4.8.2/crtendS.o
+ .ARM.attributes
+                0x00000152       0x2b /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xb8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x30 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .debug_aranges
+                0x00000030       0x20 obj_native/lwm2m-client.o
+ .debug_aranges
+                0x00000050       0x20 obj_native/lwm2m.o
+ .debug_aranges
+                0x00000070       0x20 obj_native/lwm2m-device-object.o
+ .debug_aranges
+                0x00000090       0x28 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x17d2
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x9b /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .debug_info    0x0000009b      0x479 obj_native/lwm2m-client.o
+ .debug_info    0x00000514      0x48f obj_native/lwm2m.o
+ .debug_info    0x000009a3      0xd94 obj_native/lwm2m-device-object.o
+ .debug_info    0x00001737       0x9b /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+.debug_abbrev   0x00000000      0x46c
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .debug_abbrev  0x00000012      0x145 obj_native/lwm2m-client.o
+ .debug_abbrev  0x00000157      0x14c obj_native/lwm2m.o
+ .debug_abbrev  0x000002a3      0x1b7 obj_native/lwm2m-device-object.o
+ .debug_abbrev  0x0000045a       0x12 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+.debug_line     0x00000000      0x626
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x72 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .debug_line    0x00000072      0x177 obj_native/lwm2m-client.o
+ .debug_line    0x000001e9      0x159 obj_native/lwm2m.o
+ .debug_line    0x00000342      0x28a obj_native/lwm2m-device-object.o
+ .debug_line    0x000005cc       0x5a /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+.debug_frame    0x00000000      0x1e0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xa0 obj_native/lwm2m-client.o
+ .debug_frame   0x000000a0       0x4c obj_native/lwm2m.o
+ .debug_frame   0x000000ec       0xf4 obj_native/lwm2m-device-object.o
+
+.debug_str      0x00000000     0x1018
+ *(.debug_str)
+ .debug_str     0x00000000      0x6f6 obj_native/lwm2m-client.o
+                                0x776 (size before relaxing)
+ .debug_str     0x000006f6      0x2d3 obj_native/lwm2m.o
+                                0x44e (size before relaxing)
+ .debug_str     0x000009c9      0x64f obj_native/lwm2m-device-object.o
+                                0xc60 (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000       0x48
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x28 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crti.o
+ .debug_ranges  0x00000028       0x20 /opt/analogics/am335x_sk/toolchain/bin/../../toolchain/lib/crtn.o
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(lwm2m.so elf32-littlearm)
