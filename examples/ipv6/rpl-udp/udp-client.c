@@ -52,8 +52,6 @@ int Rcvd_len = 0;
 #define UDP_CLIENT_PORT 61616
 #define UDP_SERVER_PORT 61616
 
-#define DATA_TIMEOUT 0.4
-
 #define UDP_EXAMPLE_ID  190
 
 #define DEBUG DEBUG_FULL
@@ -149,17 +147,6 @@ set_global_address(void)
  * Note the IPCMV6 checksum verification depends on the correct uncompressed
  * addresses.
  */
- 
-#if 1
-/* Mode 1 - 64 bits inline */
-   uip_ip6addr(&server_ipaddr, UIP_DS6_DEFAULT_PREFIX, 0, 0, 0, 0, 0, 0, 1);
-#elif 1
-/* Mode 2 - 16 bits inline */
-  uip_ip6addr(&server_ipaddr, UIP_DS6_DEFAULT_PREFIX, 0, 0, 0, 0, 0x00ff, 0xfe00, 1);
-#else
-/* Mode 3 - derived from server link-local (MAC) address */
-  uip_ip6addr(&server_ipaddr, UIP_DS6_DEFAULT_PREFIX, 0, 0, 0, 0x0250, 0xc2ff, 0xfea8, 0xcd1a); //redbee-econotag
-#endif
 }
 /*--------------------------------------------------------------------------*/
 static void timedout_postdata_toroot(void *nodata_cnt_ptr) {
