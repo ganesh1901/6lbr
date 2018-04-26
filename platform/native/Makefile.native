@@ -38,7 +38,7 @@ ifeq ($(HOST_OS),Windows)
 CFLAGS += -I/usr/include/ncurses
 endif
 
-CFLAGS +=-I/opt/analogics/am335x_sk/toolchain/lib
+#CFLAGS +=-I/opt/analogics/am335x_sk/toolchain/lib
 CURSES_LIBS ?= -lncurses -ltinfo
 
 TARGET_LIBFILES += $(CURSES_LIBS)
